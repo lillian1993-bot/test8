@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>綠色通勤</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output = document.getElementById('output');
+const policyContent = `
+政策：綠色通勤
+加強公共運輸使用與獎勵措施，減少私人交通工具，降低碳排放
+Policy: Green Commute
+Enhance public transport use and incentive measures, reduce private transport, and lower carbon emissions.
+----------------------------------------
+ASCII願景圖:
+      ___ 
+     |Bus|
+  o-(•‿•)-o
+     | |  
+    /   \\
+   /Bike \\
+  o-(•‿•)-o
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx = 0;
+function typeChar() {
+    if(idx < policyContent.length) {
+        output.textContent += policyContent[idx];
+        idx++;
+        setTimeout(typeChar,10);
+    }
+}
+typeChar();
+</script>
+</body>
+</html>

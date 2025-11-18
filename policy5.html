@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>減塑日行動</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output=document.getElementById('output');
+const policyContent=`
+政策：減塑日行動
+每月一次「減塑日」，從社區與校園開始，減少一次性塑膠製品使用
+Policy: Plastic Reduction Day
+Hold a "Plastic Reduction Day" once a month, starting from communities and schools, to reduce single-use plastic products.
+----------------------------------------
+ASCII願景圖:
+   X  X
+  (Bag)(Bottle)
+    (•‿•)
+     /|\\
+     / \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){
+    if(idx<policyContent.length){
+        output.textContent+=policyContent[idx];
+        idx++;
+        setTimeout(typeChar,10);
+    }
+}
+typeChar();
+</script>
+</body>
+</html>

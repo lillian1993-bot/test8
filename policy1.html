@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>全民氣候行動日</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <pre id="output"></pre>
+
+    <script>
+        const output = document.getElementById('output');
+        const policyContent = `
+政策：全民氣候行動日
+制定應對氣候變遷的法律，並定期舉辦全民氣候行動活動，讓大人與孩子都能一起參與
+Policy: National Climate Action Day
+Establish laws addressing climate change and regularly hold national climate action events where adults and children participate together.
+----------------------------------------
+ASCII願景圖:
+------------------------------------------------------------
+                    /\\        /\\        /\\ 
+                   /  \\      /  \\      /  \\
+                  /    \\    /    \\    /    \\
+             /\\  /      \\  /      \\  /      \\  /\\
+            /  \\/  /\\    \\/  /\\    \\/  /\\    \\/  \\
+           /    \\ /  \\     /  \\     /  \\ /    \\    \\
+          /      /    \\   /    \\   /    \\      \\    \\
+------------------------------------------------------------
+                 .-"-.                     .-"-. 
+                ( •‿• )                   ( •ᴗ• )
+                 -----                     -----
+             o/ |     |                   |     | \\o
+               /|_____|                   |_____|
+              /   |   \\                 /   |   \\
+             /    |    \\               /    |    \\
+            /_____|_____\\             /_____|_____\\
+                /     \\                 /     \\
+               /       \\               /       \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+        let idx = 0;
+        function typeChar() {
+            if (idx < policyContent.length) {
+                output.textContent += policyContent[idx];
+                idx++;
+                setTimeout(typeChar, 10);
+            }
+        }
+        typeChar();
+    </script>
+</body>
+</html>

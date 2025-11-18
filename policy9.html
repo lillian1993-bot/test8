@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>校園無3C日</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output=document.getElementById('output');
+const policyContent=`
+政策：校園無3C日
+每學期至少舉辦一次「校園無3C日」，鼓勵學生多參與戶外活動、降低近視率
+Policy: No 3C Day at School
+Hold at least one "No 3C Day" each semester to encourage students to engage in outdoor activities and reduce myopia.
+----------------------------------------
+ASCII願景圖:
+    School
+   (•‿•)  (•‿•)
+      ⚽
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){ if(idx<policyContent.length){ output.textContent+=policyContent[idx]; idx++; setTimeout(typeChar,10); } }
+typeChar();
+</script>
+</body>
+</html>

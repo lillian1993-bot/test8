@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>3C使用教育</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output=document.getElementById('output');
+const policyContent=`
+政策：3C使用教育
+定期進行「健康使用3C」宣導，提供教材與活動，幫助家長與兒少理解過度使用的危害
+Policy: 3C Usage Education
+Regularly promote "Healthy 3C Usage", providing teaching materials and activities to help parents and children understand the harm of overuse.
+----------------------------------------
+ASCII願景圖:
+   School
+   (Phone)
+   (•‿•)
+    /|\\
+    / \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){ if(idx<policyContent.length){ output.textContent+=policyContent[idx]; idx++; setTimeout(typeChar,10); } }
+typeChar();
+</script>
+</body>
+</html>

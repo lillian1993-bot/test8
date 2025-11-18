@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>健康3C設計</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output=document.getElementById('output');
+const policyContent=`
+政策：健康3C設計
+政府應規範3C產品，在長時間使用後提醒休息，保護眼睛與健康
+Policy: Healthy 3C Design
+Government should regulate 3C products to remind users to rest after prolonged use, protecting eyes and health.
+----------------------------------------
+ASCII願景圖:
+  (Phone)(Tablet)
+     (•‿•)
+      /|\\
+      / \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){ if(idx<policyContent.length){ output.textContent+=policyContent[idx]; idx++; setTimeout(typeChar,10); } }
+typeChar();
+</script>
+</body>
+</html>

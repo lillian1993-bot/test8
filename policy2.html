@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>菸蒂不落地</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <pre id="output"></pre>
+    <script>
+const output = document.getElementById('output');
+const policyContent = `
+政策：菸蒂不落地
+推動菸蒂減量與收集設施，結合教育宣導，讓環境更乾淨、空氣更清新
+Policy: No Cigarette Butts on the Ground
+Promote cigarette butt reduction and collection facilities, combined with educational campaigns, to make the environment cleaner and air fresher.
+----------------------------------------
+ASCII願景圖:
+      ____  X
+     |    | 
+  ( •‿• ) 
+  /|___|\\
+    | |
+   /   \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx = 0;
+function typeChar() {
+    if (idx < policyContent.length) {
+        output.textContent += policyContent[idx];
+        idx++;
+        setTimeout(typeChar, 10);
+    }
+}
+typeChar();
+    </script>
+</body>
+</html>

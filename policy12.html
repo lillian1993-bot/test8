@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>全校學生會議制度化</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output=document.getElementById('output');
+const policyContent=`
+政策：全校學生會議制度化
+每學年至少舉辦一次全校學生會議，讓學生能發表對校園生活與政策的意見
+Policy: Institutionalized School-Wide Student Meetings
+Hold at least one school-wide student meeting each year, allowing students to express opinions on campus life and policies.
+----------------------------------------
+ASCII願景圖:
+    📢
+   (•‿•)
+    /|\\
+    / \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){ if(idx<policyContent.length){ output.textContent+=policyContent[idx]; idx++; setTimeout(typeChar,10); } }
+typeChar();
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>綠蔭公園</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output = document.getElementById('output');
+const policyContent = `
+政策：綠蔭公園
+每個城市都應有更多安全、綠意的公園，讓孩子能自在呼吸與遊戲
+Policy: Shaded Green Park
+Every city should have more safe, green parks for children to freely play and breathe.
+----------------------------------------
+ASCII願景圖:
+    🌳
+   (•‿•)
+    /|\\
+    / \\
+   ⚡Swing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){
+    if(idx<policyContent.length){
+        output.textContent += policyContent[idx];
+        idx++;
+        setTimeout(typeChar,10);
+    }
+}
+typeChar();
+</script>
+</body>
+</html>

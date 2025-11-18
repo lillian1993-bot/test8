@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>菸品減害設計</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output=document.getElementById('output');
+const policyContent=`
+政策：菸品減害設計
+要求菸品製造商改用可分解濾嘴，減少環境污染與下水道堵塞
+Policy: Harm Reduction Design for Cigarettes
+Require cigarette manufacturers to use biodegradable filters to reduce environmental pollution and sewage blockage.
+----------------------------------------
+ASCII願景圖:
+  (Cigarette) 🌳
+    (•‿•)
+     /|\\
+     / \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){ if(idx<policyContent.length){ output.textContent+=policyContent[idx]; idx++; setTimeout(typeChar,10); } }
+typeChar();
+</script>
+</body>
+</html>

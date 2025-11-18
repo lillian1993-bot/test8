@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>媒體共同守護</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<pre id="output"></pre>
+<script>
+const output=document.getElementById('output');
+const policyContent=`
+政策：媒體共同守護
+政府與媒體應加強宣導數位性剝削的危害，提升社會大眾防範意識
+Policy: Media Joint Protection
+Government and media should enhance publicity on the harm of digital exploitation, raising public awareness.
+----------------------------------------
+ASCII願景圖:
+   NEWS [TV]
+   (•‿•)
+    /|\\
+    / \\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`;
+let idx=0;
+function typeChar(){ if(idx<policyContent.length){ output.textContent+=policyContent[idx]; idx++; setTimeout(typeChar,10); } }
+typeChar();
+</script>
+</body>
+</html>

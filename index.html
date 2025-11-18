@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>兒少政策互動展覽</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>兒少政策互動展覽</h1>
+        <p>請選擇您希望優先執行的政策建議：</p>
+
+        <select id="policy-select">
+            <optgroup label="永續環境">
+                <option value="policy1.html">全民氣候行動日</option>
+                <option value="policy2.html">菸蒂不落地</option>
+                <option value="policy3.html">綠色通勤</option>
+                <option value="policy4.html">綠蔭公園</option>
+                <option value="policy5.html">減塑日行動</option>
+                <option value="policy6.html">菸品減害設計</option>
+            </optgroup>
+            <optgroup label="數位安全與健康使用">
+                <option value="policy7.html">健康3C設計</option>
+                <option value="policy8.html">3C使用教育</option>
+                <option value="policy9.html">校園無3C日</option>
+                <option value="policy10.html">數位性剝削零容忍</option>
+                <option value="policy11.html">媒體共同守護</option>
+            </optgroup>
+            <optgroup label="兒少表意參與">
+                <option value="policy12.html">全校學生會議制度化</option>
+            </optgroup>
+        </select>
+        <button id="execute-btn">Execute</button>
+
+        <div id="loading-screen" class="hidden">
+            <pre id="loading-text"></pre>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
