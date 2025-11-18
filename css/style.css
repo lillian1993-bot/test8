@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: "Courier New", Courier, monospace;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+select, button {
+    font-family: monospace;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004400;
+}
+
+.hidden {
+    display: none;
+}
+
+pre {
+    text-align: left;
+    margin-top: 20px;
+}
